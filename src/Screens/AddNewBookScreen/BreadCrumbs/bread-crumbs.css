@@ -1,0 +1,20 @@
+#bread-crumbs-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 24px;
+}
+
+@media all and (min-width: 996px) {
+  #bread-crumbs-container {
+    margin-top: 42px;
+  }
+}
+/*# sourceMappingURL=bread-crumbs.css.map */

@@ -1,0 +1,36 @@
+#single-bread-crumbs-container {
+  width: 120px;
+  .bread-crumb-circle-wrapper {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    color: #fff;
+    p {
+      text-align: center;
+      font-size: 16px;
+      line-height: 42px;
+      margin: 0;
+    }
+  }
+  .is-active {
+    background-color: green;
+    filter: drop-shadow(0 0 4px green);
+  }
+  .has-passed {
+      background-color: green;
+      transition: transform 0.2s;
+      opacity: 0.5;
+      &:hover{
+          cursor: pointer;
+          transform: scale(1.1);
+      }
+  }
+  .not-passed {
+      background-color: grey;
+  }
+  p {
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+  }
+}

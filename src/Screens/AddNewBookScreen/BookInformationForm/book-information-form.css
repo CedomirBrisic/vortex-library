@@ -1,0 +1,235 @@
+#book-information-form-container {
+  margin-top: 42px;
+}
+
+#book-information-form-container input,
+#book-information-form-container select,
+#book-information-form-container textarea {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  line-height: 42px;
+  font-size: 16px;
+  border: 0;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+  border-radius: 15px;
+  outline: 0;
+  margin-top: 5px;
+}
+
+#book-information-form-container input:focus,
+#book-information-form-container select:focus,
+#book-information-form-container textarea:focus {
+  -webkit-box-shadow: 0px 0px 5px 0px #323232;
+  box-shadow: 0px 0px 5px 0px #323232;
+}
+
+#book-information-form-container select,
+#book-information-form-container option {
+  height: 42px;
+  -webkit-appearance: none;
+}
+
+#book-information-form-container select:hover,
+#book-information-form-container option:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 5px 0px #323232;
+  box-shadow: 0px 0px 5px 0px #323232;
+}
+
+#book-information-form-container select {
+  background-image: url("../../../../public/drop-down-arrow.png");
+  background-size: 24px;
+  background-position: 99%;
+  background-repeat: no-repeat;
+}
+
+#book-information-form-container textarea {
+  line-height: unset;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#book-information-form-container label {
+  padding-left: 5px;
+}
+
+#book-information-form-container .validation-disclaimer {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+#book-information-form-container .single-field-wrapper {
+  margin-bottom: 32px;
+}
+
+#book-information-form-container .hide-disclaimer {
+  opacity: 0;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+#book-information-form-container .hide-option {
+  display: none;
+}
+
+@media all and (min-width: 720px) {
+  #book-information-form-container .short-field {
+    width: 320px;
+  }
+}
+
+@media all and (min-width: 720px) {
+  #book-information-form-container .edition-inputs-container {
+    max-width: 720px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+#book-information-form-container .defualt-dropdown-color {
+  color: grey;
+}
+
+#book-information-form-container .selected-dropdown-color {
+  color: unset;
+}
+
+.successfully-submitted-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.successfully-submitted-container .checkmark-wrapper {
+  width: 120px;
+  height: 120px;
+  background-color: #e0e0e0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  margin-bottom: 32px;
+  position: relative;
+  -webkit-animation: slideInCheckmarkWrapper 0.6s ease-in-out forwards;
+          animation: slideInCheckmarkWrapper 0.6s ease-in-out forwards;
+}
+
+.successfully-submitted-container .checkmark-wrapper .checkmark-arrow {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-animation: showCheckmarkArrow 1s ease-in-out forwards;
+          animation: showCheckmarkArrow 1s ease-in-out forwards;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.successfully-submitted-container .add-another-book-btn {
+  margin-top: 32px;
+  width: 300px;
+  border-radius: 25px;
+  padding: 0 10px;
+  -webkit-box-shadow: 0px 0px 5px 0px green;
+  box-shadow: 0px 0px 5px 0px green;
+  position: relative;
+}
+
+.successfully-submitted-container .add-another-book-btn:hover {
+  cursor: pointer;
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 7px 0px green;
+  box-shadow: 0px 0px 7px 0px green;
+}
+
+.successfully-submitted-container .add-another-book-btn p {
+  line-height: 42px;
+  text-align: center;
+  margin: 0;
+}
+
+@-webkit-keyframes slideInCheckmarkWrapper {
+  from {
+    bottom: 100%;
+  }
+  to {
+    bottom: 0;
+  }
+}
+
+@keyframes slideInCheckmarkWrapper {
+  from {
+    bottom: 100%;
+  }
+  to {
+    bottom: 0;
+  }
+}
+
+@-webkit-keyframes showCheckmarkArrow {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes showCheckmarkArrow {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*# sourceMappingURL=book-information-form.css.map */

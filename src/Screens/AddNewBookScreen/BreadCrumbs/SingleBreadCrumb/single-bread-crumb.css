@@ -1,0 +1,49 @@
+#single-bread-crumbs-container {
+  width: 120px;
+}
+
+#single-bread-crumbs-container .bread-crumb-circle-wrapper {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  color: #fff;
+}
+
+#single-bread-crumbs-container .bread-crumb-circle-wrapper p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 42px;
+  margin: 0;
+}
+
+#single-bread-crumbs-container .is-active {
+  background-color: green;
+  -webkit-filter: drop-shadow(0 0 4px green);
+          filter: drop-shadow(0 0 4px green);
+}
+
+#single-bread-crumbs-container .has-passed {
+  background-color: green;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  opacity: 0.5;
+}
+
+#single-bread-crumbs-container .has-passed:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#single-bread-crumbs-container .not-passed {
+  background-color: grey;
+}
+
+#single-bread-crumbs-container p {
+  font-size: 14px;
+  margin-top: 5px;
+  text-align: center;
+}
+/*# sourceMappingURL=single-bread-crumb.css.map */

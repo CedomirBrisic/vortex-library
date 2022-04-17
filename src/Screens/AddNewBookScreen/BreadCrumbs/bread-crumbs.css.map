@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,uBAAuB,CAAC;EACtB,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,MAAM;EACvB,UAAU,EAAE,IAAI;CAIjB;;AAHC,MAAM,CAAC,GAAG,MAAM,SAAS,EAAE,KAAK;EANlC,AAAA,uBAAuB,CAAC;IAOpB,UAAU,EAAE,IAAI;GAEnB",
+    "sources": [
+        "bread-crumbs.scss"
+    ],
+    "names": [],
+    "file": "bread-crumbs.css"
+}

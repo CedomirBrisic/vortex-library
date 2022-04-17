@@ -1,0 +1,35 @@
+#add-new-subgenre-form-container {
+  margin-top: 42px;
+  .txt-input {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: 42px;
+    font-size: 16px;
+    border: 0;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+    border-radius: 15px;
+    outline: 0;
+    margin-bottom: 24px;
+    &:focus {
+      -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 1);
+      -moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 1);
+      box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 1);
+    }
+  }
+  label {
+    @media all and (min-width: 720px) {
+      margin-left: 32px;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+    input {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+  }
+}
