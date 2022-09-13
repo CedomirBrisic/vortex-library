@@ -43,7 +43,7 @@ const BookInformationForm = () => {
         setPublishersToDisplay(publishersOutput)
         setFormatsToDisplay(formatsOutput)
         setEditionLanguagesToDisplay(editionLanguagesOutput)
-    }, [])
+    }, [context.dummyData.authors, context.dummyData.publishers, context.dummyData.editionLanguages, context.dummyData.formats])
 
     const depositNewBookDataToSendProperty = (event) => {
         const property = event.target.getAttribute("data-property")
